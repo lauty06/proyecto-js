@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script>
-
-        const hora = prompt("ingresa la hora");
-        
-        if (hora >= 6 && hora <=12){
-            alert("¡buenos diass!")
-        }else if(hora >= 13 && hora <=18){
-            alert("¡buenas tardess!")
-        }else{
-            alert("¡buenas nochess!")
-        }
-    
-
-        
-
-    </script>
-</body>
+  </head>
+  <body>
+    <section>
+      <h1>bienvenido a la tienda, ¿que quieres comprar?</h1>
+      <ul>
+        <li onclick="comprar(cartuchoDeEscopeta)">Cartucho De Escopeta <span>2000 Pstas <img src="../js/imagenes/Shotgunshells.webp" alt="cartuchos"></span></li>
+        <li onclick="comprar(balasDePistola)">Balas De Pistola <span>1400 Pstas <img src="../js/imagenes/bala de pistola.jpg" alt="balas"></span></li>
+        <li onclick="comprar(hiervaAmarilla)">Hierva Amarilla <span>3000 Pstas <img src="../js/imagenes/Hierba_amarilla_evil.webp" alt="Hierva"></span></li>
+        <li onclick="comprar(polvora)">Polvora <span>700 Pstas <img src="../js/imagenes/polvora.webp" alt="polvora"></span></li>
+        <li onclick="comprar(sprayDePrimerosAuxilios)">Spray De Primeros Auxilios <span>5000 Pstas <img src="../js/imagenes/Spray_de_primeros_auxilios.webp" alt="">spray</span></li>
+        <li onclick="comprar(pistola)">Pistola <span>7500 Pstas <img src="../js/imagenes/Pistolaw.webp" alt=""></span></li>
+        <li onclick="comprar(escopeta)">Escopeta <span>10000 Pstas <img src="../js/imagenes/Escopeta_Re4.webp" alt=""></span></li>
+     </ul>
+    </section>
+    <section>
+      <h2>Mi inventario</h2>
+      <ul id="inventario">
+      </ul>
+      <h2 id="pesetas">
+        pesetas: <span></span>
+      </h2>
+    </section>
+    <script src="app.js"></script>
+  </body>
 </html>
